@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Greifhaus</string>
+
+    <string name="action_show_times">Öffnungszeiten</string>
+    <string name="actionedit">Bearbeiten</string>
+    <string name="labelVisit">Besuchen</string>
+    <string name="labelNewCard">Neue 10er Karte</string>
+    <string name="labelNotVisited">Noch nicht besucht</string>
+    <string name="labelCancel">Abbrechen</string>
+    <string name="labelSave">Speichern</string>
+    <string name="labelVisited">Besucht: %s</string>
+</resources>

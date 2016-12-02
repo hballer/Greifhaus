@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="de.greifhaus.greifhaus.TenCardActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/labelVisit"
+        android:id="@+id/buttonVisit"
+        android:layout_gravity="left"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/labelNewCard"
+        android:id="@+id/buttonNewCard"
+        android:layout_gravity="right"
+        android:visibility="visible"
+        android:layout_alignTop="@+id/buttonVisit"
+        android:layout_alignParentEnd="true"
+        android:enabled="false" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/labelNotVisited"
+        android:id="@+id/switchVisit01"
+        android:layout_below="@+id/buttonVisit"
+        android:layout_alignParentStart="true"
+        android:enabled="true"
+        android:clickable="false" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/labelNotVisited"
+        android:id="@+id/switchVisit02"
+        android:layout_below="@+id/switchVisit01"
+        android:layout_alignParentStart="true"
+        android:enabled="true"
+        android:clickable="false" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/labelNotVisited"
+        android:id="@+id/switchVisit03"
+        android:layout_below="@+id/switchVisit02"
+        android:layout_alignParentStart="true"
+        android:enabled="true"
+        android:clickable="false" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/labelNotVisited"
+        android:id="@+id/switchVisit04"
+        android:layout_below="@+id/switchVisit03"
+        android:layout_alignParentStart="true"
+        android:enabled="true"
+        android:clickable="false" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/labelNotVisited"
+        android:id="@+id/switchVisit05"
+        android:layout_below="@+id/switchVisit04"
+        android:layout_alignParentStart="true"
+        android:enabled="true"
+        android:clickable="false" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/labelNotVisited"
+        android:id="@+id/switchVisit06"
+        android:layout_below="@+id/switchVisit05"
+        android:layout_alignParentStart="true"
+        android:enabled="true"
+        android:clickable="false"
+        android:checked="false" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/labelNotVisited"
+        android:id="@+id/switchVisit07"
+        android:layout_below="@+id/switchVisit06"
+        android:layout_alignParentStart="true"
+        android:enabled="true"
+        android:clickable="false" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/labelNotVisited"
+        android:id="@+id/switchVisit08"
+        android:layout_below="@+id/switchVisit07"
+        android:layout_alignParentStart="true"
+        android:enabled="true"
+        android:clickable="false" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/labelNotVisited"
+        android:id="@+id/switchVisit09"
+        android:layout_below="@+id/switchVisit08"
+        android:layout_alignParentStart="true"
+        android:enabled="true"
+        android:clickable="false" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/labelNotVisited"
+        android:id="@+id/switchVisit10"
+        android:layout_below="@+id/switchVisit09"
+        android:layout_alignParentStart="true"
+        android:enabled="true"
+        android:clickable="false" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarVisits"
+        android:layout_gravity="center_horizontal"
+        android:progress="0"
+        android:indeterminate="false"
+        android:max="10"
+        android:layout_below="@+id/switchVisit10"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/labelCancel"
+        android:id="@+id/buttonCancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/labelSave"
+        android:id="@+id/buttonSave"
+        android:layout_alignBottom="@+id/buttonCancel"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textViewName"
+        android:layout_below="@+id/progressBarVisits"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center" />
+
+</RelativeLayout>

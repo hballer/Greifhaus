@@ -78,7 +78,7 @@ public class TenCardActivity extends Activity {
                     if (grantResults.length>0) {
                         if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                             // Permission Granted
-                            System.out.println("Habe die Erlaubnis!");
+                            //System.out.println("Habe die Erlaubnis!");
                             readUserName();
                         } else {
                             // Permission Denied
@@ -111,7 +111,7 @@ public class TenCardActivity extends Activity {
         }
         userName = display_name;
         textName.setText(userName);
-        System.out.println("Ende");
+        //System.out.println("Ende");
         c.close();
     }
 

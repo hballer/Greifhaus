@@ -3,6 +3,7 @@ package de.greifhaus.greifhaus;
 import android.app.Activity;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.widget.TextView;
 
 import java.util.Calendar;
@@ -58,9 +59,9 @@ public class TimesActivity extends Activity {
                 dayDates = (TextView) findViewById(R.id.textMoTimes);
                 break;
         }
-        dayName.setTextColor(getResources().getColor(R.color.colorAccent));
+        dayName.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.colorAccent));
         dayName.setTypeface(null, Typeface.BOLD);
-        dayDates.setTextColor(getResources().getColor(R.color.colorAccent));
+        dayDates.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.colorAccent));
         dayDates.setTypeface(null, Typeface.BOLD);
     }
 }
